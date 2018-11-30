@@ -1,0 +1,37 @@
+.panel-heading{
+    text-align:center;
+    font-weight: bold;
+}
+
+.linha{
+    margin-top:1%;
+}
+
+.primeiro_titulo{
+    font-size:18px;
+    text-align:center;
+    font-weight: bold;
+    padding-bottom:1%;
+    color:rgb(207, 207, 207);
+}
+
+.titulo{
+    border-style:solid;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+    border-color:#e1e1e1;
+    font-size:18px;
+    text-align:center;
+    font-weight: bold;
+    padding-bottom:2%;
+    padding-top:2%;
+    color:rgb(207, 207, 207);
+}
+
+.coluna_centro{
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-color:#e1e1e1;
+}
