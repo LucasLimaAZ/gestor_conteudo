@@ -13,12 +13,13 @@
 </head>
 <body>
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Gerenciador de conteúdos DOM.
                 </div>
-                <form role="form">
+                <form role="form" action="processaDados.php" method="POST">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="panel-body">
@@ -77,7 +78,7 @@
                                     <div class="col-lg-4 linha coluna_centro">
                                         <div class="col-lg-12 linha">
                                             <label><div class="fa fa-phone"></div> Seu Telefone:</label>
-                                            <input type="text" class="form-control" name="telefone"/>
+                                            <input type="text" class="form-control" name="telefone" placeholder="(99)99999-9999"/>
                                         </div>
                                         <div class="col-lg-12 linha">
                                             <label><div class="fa fa-envelope-o"></div> E-mail:</label>
@@ -93,6 +94,10 @@
                                             <label><div class="fa fa-comment-o"></div> Quem Somos?</label>
                                             <textarea class="form-control" rows="8" placeholder="Conte a história do seu negócio..." name="quem_somos"></textarea>
                                         </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-4"></div>
+                                        <input type="submit" value="Enviar" class="btn btn-danger col-lg-4 enviar"/>
                                     </div>
                                 </div>
                             </div>
