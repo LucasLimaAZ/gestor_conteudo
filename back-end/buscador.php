@@ -1,10 +1,10 @@
 <?php
 
-include 'Conteudo.php';
+include 'QueryBuilder.php';
 include 'Conexao.php';
 
-$statement = $pdo->prepare('select * from conteudo');
-$statement->execute();
-$results = $statement->fetchAll(PDO::FETCH_CLASS, 'Conteudo');
+$pdo = Conexao::conectar();
+$query = new QueryBuilder($pdo);
+$resultados = $query->selectAll('conteudo');
 
 ?>

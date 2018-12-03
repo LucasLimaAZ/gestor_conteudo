@@ -34,7 +34,7 @@
                             </thead>
                             <tbody>
                                 <?php
-                                    foreach($results as $campo):?>
+                                    foreach($resultados as $campo):?>
                                     <tr>
                                         <td><?=$campo->id;?></td>
                                         <td><?=$campo->titulo;?></td>

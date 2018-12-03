@@ -1,13 +1,21 @@
 <?php
 
-try{
+class Conexao{
 
-    $pdo = new PDO('mysql:host=127.0.0.1;dbname=conteudo', 'root', '');
+    public static function conectar(){
 
-}catch(PDOException $e){
+        try{
 
-    die($e->getMessage());
-    
+           return new PDO('mysql:host=127.0.0.1;dbname=conteudo', 'root', '');
+
+        }catch(PDOException $e){
+
+            die($e->getMessage());
+            
+        }
+
+    }
+
 }
 
 ?>
