@@ -19,7 +19,11 @@
                 <div class="panel-heading">
                     Gerenciador de conteúdos DOM.
                 </div>
+<<<<<<< HEAD
                 <form role="form" action="salvaDados.php" method="POST">
+=======
+                <form role="form" action="processaDados.php" method="POST">
+>>>>>>> 336ab27362767747bee55a68b1aff7977bbc2fb3
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="panel-body">
@@ -78,7 +82,11 @@
                                     <div class="col-lg-4 linha coluna_centro">
                                         <div class="col-lg-12 linha">
                                             <label><div class="fa fa-phone"></div> Seu Telefone:</label>
+<<<<<<< HEAD
                                             <input type="text" class="form-control" name="telefone" placeholder="(99) 99999-9999"/>
+=======
+                                            <input type="text" class="form-control" name="telefone" placeholder="(99)99999-9999"/>
+>>>>>>> 336ab27362767747bee55a68b1aff7977bbc2fb3
                                         </div>
                                         <div class="col-lg-12 linha">
                                             <label><div class="fa fa-envelope-o"></div> E-mail:</label>
@@ -95,8 +103,14 @@
                                             <textarea class="form-control" rows="8" placeholder="Conte a história do seu negócio..." name="quem_somos"></textarea>
                                         </div>
                                     </div>
+<<<<<<< HEAD
                                     <div class="col-lg-12 enviar">
                                         <input type="submit" value="enviar" class="btn btn-danger col-md-6 col-md-offset-3"/>
+=======
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-4"></div>
+                                        <input type="submit" value="Enviar" class="btn btn-danger col-lg-4 enviar"/>
+>>>>>>> 336ab27362767747bee55a68b1aff7977bbc2fb3
                                     </div>
                                 </div>
                             </div>
