@@ -11,3 +11,5 @@ $descricao = $_POST['descricao'];
 $pdo = Conexao::conectar();
 $query = new QueryBuilder($pdo);
 $query->insertInto($titulo, $subtitulo, $tags, $descricao);
+
+?>
