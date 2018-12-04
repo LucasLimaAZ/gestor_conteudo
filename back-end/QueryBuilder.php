@@ -18,7 +18,15 @@ class QueryBuilder{
 
     }
 
-    public function inserirDados($titulo, $subtitulo, $tags, $descricao){
+    public function selectWhere($table, $id){
+
+        $seleciona = $this->pdo->prepare("select * from {$table} where id=$id");
+        $seleciona->execute();
+        return $seleciona->fetchAll(PDO::FETCH_CLASS);
+
+    }
+
+    public function insertInto($titulo, $subtitulo, $tags, $descricao){
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $inserir = $this->pdo->prepare("INSERT INTO `conteudo`(`titulo`, `subtitulo`, `tags`, `descricao`) VALUES ('$titulo', '$subtitulo', '$tags', '$descricao')");

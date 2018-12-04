@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="mystyle/mystyle.css"/>
     <link href="SB-Admin-2/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script href="bootstrap/js/bootstrap.min.js"></script>
+    <script href="back-end/js/IdSelector.js"></script>
     <?php include('back-end/buscador.php'); ?>
     <title>Painel</title>
 </head>
@@ -36,7 +37,9 @@
                                 <?php
                                     foreach($resultados as $campo):?>
                                     <tr>
-                                        <td><?=$campo->id;?></td>
+                                        <form id="pega_id" action="Cliente.php" method="post">
+                                        <td><input class="btn btn-default" id="coffee-submit" type="submit" name="submit" value="<?=$campo->id ?>"></td>
+                                        </form>
                                         <td><?=$campo->titulo;?></td>
                                         <td><?=$campo->subtitulo;?></td>
                                         <td><?=$campo->tags;?></td>

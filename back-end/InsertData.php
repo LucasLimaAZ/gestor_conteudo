@@ -10,4 +10,4 @@ $descricao = $_POST['descricao'];
 
 $pdo = Conexao::conectar();
 $query = new QueryBuilder($pdo);
-$query->inserirDados($titulo, $subtitulo, $tags, $descricao);
+$query->insertInto($titulo, $subtitulo, $tags, $descricao);
