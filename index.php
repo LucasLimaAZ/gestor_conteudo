@@ -19,11 +19,15 @@
                 <div class="panel-heading">
                     Gerenciador de conteúdos DOM.
                 </div>
-                <form role="form" action="back-end/InsertData.php" method="POST">
+                <form role="form" action="Success.php" method="POST">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="panel-body">
                                 <div class="form-group">
+                                <div class="col-lg-12">
+                                    <label><div class="fa fa-text"></div> Nome Completo:</label>
+                                        <input type="text" class="form-control" name="nome"/>
+                                    </div>
                                     <div class="col-lg-12 linha primeiro_titulo">
                                         Identidade do site.
                                     </div>
@@ -86,7 +90,7 @@
                                         </div>
                                         <div class="col-lg-12 linha">
                                             <label><div class="fa fa-location-arrow"></div> Localização:</label>
-                                            <input type="text" class="form-control" name="palavras_chave" placeholder="Seu endereço."/>
+                                            <input type="text" class="form-control" name="endereco" placeholder="Seu endereço."/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 linha coluna_direita">

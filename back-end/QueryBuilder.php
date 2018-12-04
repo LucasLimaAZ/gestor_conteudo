@@ -26,10 +26,10 @@ class QueryBuilder{
 
     }
 
-    public function insertInto($titulo, $subtitulo, $tags, $descricao){
+    public function insertInto($nome, $titulo, $subtitulo, $tags, $descricao, $cor_primaria, $cor_secundaria, $frases, $links, $telefone, $email, $endereco, $quem_somos){
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $inserir = $this->pdo->prepare("INSERT INTO `conteudo`(`titulo`, `subtitulo`, `tags`, `descricao`) VALUES ('$titulo', '$subtitulo', '$tags', '$descricao')");
+        $inserir = $this->pdo->prepare("INSERT INTO `conteudo`(`nome`, `titulo`, `subtitulo`, `tags`, `descricao`, `cor_primaria`, `cor_secundaria`, `frases`, `links`, `telefone`, `email`, `endereco`, `quem_somos`) VALUES ('$nome','$titulo', '$subtitulo', '$tags', '$descricao','$cor_primaria','$cor_secundaria','$frases','$links','$telefone','$email','$endereco','$quem_somos')");
         $inserir->execute();
 
     }

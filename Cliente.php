@@ -12,43 +12,75 @@
     <title>Cliente</title>
     <?php include 'back-end/PaginaCliente.php' ?>
 </head>
-<body>
-<div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <?=$titulo?>
-            </div>
-            <div class="panel-body">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#indexacao" data-toggle="tab">Indexação</a>
-                    </li>
-                    <li><a href="#visual" data-toggle="tab">Visual</a>
-                    </li>
-                    <li><a href="#info" data-toggle="tab">Info</a>
-                    </li>
-                    <li><a href="#conteudo" data-toggle="tab">Conteúdo</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade in active" id="indexacao">
-                        <h4>Titulo: <?=$titulo?></h4>
-                        <h5>Subtitulo: <?=$subtitulo?></h5>
-                    </div>
-                    <div class="tab-pane fade" id="visual">
-                        <h4>Profile Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="tab-pane fade" id="info">
-                        <h4>Messages Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="tab-pane fade" id="conteudo">
-                        <h4>Settings Tab</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+<body class="cliente_body">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <?=$nome?>
                 </div>
+                <div class="panel-body">
+                    <h4>Título: <?=$titulo?></h4>
+                    <h5>Subtitulo: <?=$subtitulo?></h5>
+                    <h6>Tags: <?=$tags?></h6>
+                </div>
+                <div class="panel-footer">
+                    Informações de identidade e indexação.
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Descrição
+                </div>
+                <div class="panel-body">
+                    <p><?=$descricao?></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="well">
+                <h4>Frases e Slogans:</h4>
+                <p><?=$frases?></p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="well">
+                <h4>Links de referência:</h4>
+                <p><a><?=$links?></a></p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="cores">
+                <div class="col-lg-6">
+                <h3>Cor primária:</h3>
+                <h3 style="color:<?=$cor_primaria?>"><?=$cor_primaria?></h3>
+                </div>
+                <div class="col-lg-6">
+                <h3>Cor secundária:</h3>
+                <h3 style="color:<?=$cor_secundaria?>"><?=$cor_secundaria?></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="well">
+                <h4><i class="fa fa-phone"> Telefone: </i></h4>
+                <p><?=$telefone?></p>
+                <h4><i class="fa fa-envelope"> Email: </i></h4>
+                <p><?=$email?></p>
+                <h4><i class="fa fa-location-arrow"> Endereço: </i></h4>
+                <p><?=$endereco?></p>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="well">
+                <h4>Quem Somos :</h4>
+                <p><?=$quem_somos?></p>
             </div>
         </div>
     </div>
