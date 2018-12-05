@@ -6,7 +6,7 @@ class Conexao{
 
         try{
 
-           return new PDO('mysql:host=127.0.0.1;dbname=conteudo', 'root', '');
+           return new PDO('mysql:host=localhost;dbname=domcom_projetos', 'domcom_projetos', ')*G31(IPfNEY');
 
         }catch(PDOException $e){
 

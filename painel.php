@@ -26,11 +26,11 @@
                         <table class="table table-striped table-bordered table-hover">
                             <thead>
                                 <tr>
+                                    <th>Nome</th>
                                     <th>Id</th>
                                     <th>Título</th>
                                     <th>Subtitulo</th>
                                     <th>Tags</th>
-                                    <th>Descrição</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,10 +40,10 @@
                                         <form id="pega_id" action="Cliente.php" method="post">
                                         <td><input class="btn btn-default" id="coffee-submit" type="submit" name="submit" value="<?=$campo->id ?>"></td>
                                         </form>
+                                        <td><?=$campo->nome;?></td>
                                         <td><?=$campo->titulo;?></td>
                                         <td><?=$campo->subtitulo;?></td>
                                         <td><?=$campo->tags;?></td>
-                                        <td><?=$campo->descricao;?></td>
                                     </tr>
                                 <?php endforeach;?>
                             </tbody>

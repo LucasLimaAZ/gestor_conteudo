@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="mystyle/mystyle.css"/>
     <link href="SB-Admin-2/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script href="bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <script src="myscript/indexScript.js"></script>
     <title>DOM</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
                 <div class="panel-heading">
                     Gerenciador de conteúdos DOM.
                 </div>
-                <form role="form" action="Success.php" method="POST">
+                <form name="form" role="form" action="Success.php" method="POST" enctype="multipart/form-data" onSubmit="return verifica();">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="panel-body">
