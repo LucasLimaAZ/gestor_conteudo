@@ -78,7 +78,7 @@
                                         </div>
                                         <div class="col-lg-12 linha">
                                             <label><div class="fa fa-play-circle"></div> Mídias adicionais:</label>
-                                            <input type="file" name="midias" accept="jpg|png|jpeg|pdf|mp4"/>
+                                            <input type="file" name="midias[]" accept="jpg|png|jpeg|pdf" multiple/>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 linha coluna_centro">
@@ -101,6 +101,14 @@
                                             <textarea class="form-control" rows="8" placeholder="Conte a história do seu negócio..." name="quem_somos"></textarea>
                                         </div>
                                     </div>
+                                    <div class="col-ld-6 linha">
+                                        <label><div class="fa fa-comment-o"></div> Produtos:</label>
+                                        <textarea class="form-control" rows="8" placeholder="Cadastre seus produtos ou serviços. (Um por linha)" name="produtos"></textarea>
+                                    </div>
+                                    <div class="col-ld-6 linha">
+                                        <label>
+                                        <input type="file" name="produtos" multiple/>
+                                    </div><div class="fa fa-comment-o"></div> Fotos:</label>
                                     <div class="col-lg-12">
                                         <div class="col-lg-4"></div>
                                         <input type="submit" value="Enviar" class="btn btn-danger col-lg-4 enviar"/>
