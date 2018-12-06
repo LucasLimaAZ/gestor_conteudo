@@ -26,10 +26,10 @@ class QueryBuilder{
 
     }
 
-    public function insertInto($nome, $titulo, $subtitulo, $tags, $descricao, $cor_primaria, $cor_secundaria, $frases, $links, $telefone, $email, $endereco, $quem_somos){
+    public function insertInto($nome, $titulo, $subtitulo, $tags, $descricao, $cor_primaria, $cor_secundaria, $frases, $links, $telefone, $email, $endereco, $quem_somos, $produtos){
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $inserir = $this->pdo->prepare("INSERT INTO `conteudo`(`nome`, `titulo`, `subtitulo`, `tags`, `descricao`, `cor_primaria`, `cor_secundaria`, `frases`, `links`, `telefone`, `email`, `endereco`, `quem_somos`) VALUES ('$nome','$titulo', '$subtitulo', '$tags', '$descricao','$cor_primaria','$cor_secundaria','$frases','$links','$telefone','$email','$endereco','$quem_somos')");
+        $inserir = $this->pdo->prepare("INSERT INTO `conteudo`(`nome`, `titulo`, `subtitulo`, `tags`, `descricao`, `cor_primaria`, `cor_secundaria`, `frases`, `links`, `telefone`, `email`, `endereco`, `quem_somos`, `produtos`) VALUES ('$nome','$titulo', '$subtitulo', '$tags', '$descricao','$cor_primaria','$cor_secundaria','$frases','$links','$telefone','$email','$endereco','$quem_somos','$produtos')");
         $inserir->execute();
 
     }

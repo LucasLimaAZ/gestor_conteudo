@@ -22,6 +22,6 @@ include 'FileUploaders.php';
 
 $pdo = Conexao::conectar();
 $query = new QueryBuilder($pdo);
-$query->insertInto($nome, $titulo, $subtitulo, $tags, $descricao, $cor_primaria, $cor_secundaria, $frases, $links, $telefone, $email, $endereco, $quem_somos);
+$query->insertInto($nome, $titulo, $subtitulo, $tags, $descricao, $cor_primaria, $cor_secundaria, $frases, $links, $telefone, $email, $endereco, $quem_somos, $produtos);
 
 ?>

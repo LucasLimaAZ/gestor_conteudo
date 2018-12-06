@@ -101,14 +101,15 @@
                                             <textarea class="form-control" rows="8" placeholder="Conte a história do seu negócio..." name="quem_somos"></textarea>
                                         </div>
                                     </div>
-                                    <div class="col-ld-6 linha">
-                                        <label><div class="fa fa-comment-o"></div> Produtos:</label>
-                                        <textarea class="form-control" rows="8" placeholder="Cadastre seus produtos ou serviços. (Um por linha)" name="produtos"></textarea>
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-8 linha">
+                                            <label><div class="fa fa-cart-plus"></div> Produtos/Serviços:</label>
+                                            <textarea class="form-control" rows="5" placeholder="Cadastre seus produtos ou serviços. (Um por linha)" name="produtos"></textarea>
+                                        </div>
+                                        <div class="col-lg-4 linha">
+                                            <label></div><div class="fa fa-camera"></div> Fotos:</label>
+                                            <input type="file" name="fotos[]" multiple/>
                                     </div>
-                                    <div class="col-ld-6 linha">
-                                        <label>
-                                        <input type="file" name="produtos" multiple/>
-                                    </div><div class="fa fa-comment-o"></div> Fotos:</label>
                                     <div class="col-lg-12">
                                         <div class="col-lg-4"></div>
                                         <input type="submit" value="Enviar" class="btn btn-danger col-lg-4 enviar"/>

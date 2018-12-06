@@ -16,6 +16,7 @@ class Conteudo{
     public $email;
     public $endereco;
     public $quem_somos;
+    public $produtos;
 
 }
 

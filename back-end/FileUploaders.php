@@ -40,3 +40,16 @@ foreach ($_FILES["midias"]["error"] as $key => $error) {
  
     $i++;
 }
+
+$j = 0;
+ 
+foreach ($_FILES["fotos"]["error"] as $key => $error) {
+
+    $fotos_nome[$j] = $nome . ' ' . $_FILES["fotos"]["name"][$j];
+   
+    $fotos_destino = "uploads/imagens/" . $fotos_nome[$j];
+   
+    move_uploaded_file( $_FILES["fotos"]["tmp_name"][$j], $fotos_destino );
+ 
+    $j++;
+}
